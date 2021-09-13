@@ -1,2 +1,2 @@
 export const basePath = "https://api.punkapi.com";
-export const version = "v2";
+export const apiVersion = "v2";
