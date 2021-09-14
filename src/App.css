@@ -17,6 +17,7 @@ body {
 .fondo {
   float: left;
   width: 100%;
+  overflow: hidden;
 }
 .container {
   display: table;
@@ -1134,3 +1135,267 @@ footer .button span {
   border-radius: 2px;
 }
 /* FIN CARRITO  */
+
+
+/* INICIO DETALLES DE PRODUCTO */
+
+.fondo .container .row .col-description{
+  float: left;
+  width: 100%;
+  margin-top: 150px;
+}
+.fondo .container .row .col-description .flex{
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.fondo .container .row .col-description .flex strong{
+  color: #4e4e4e;
+  border-bottom: 1px solid #ffc6d1;
+}
+.fondo .container .row .col-description .flex div{
+  width: 5px;
+  height: 5px;
+  background: #d4d4d3;
+  margin: 0px 10px;
+  transform: rotate(45deg);
+}
+.fondo .container .row .col-description .titleProduct{
+  float: left;
+  width: 100%;
+}
+.fondo .container .row .col-description .titleProduct h2{
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+.fondo .container .row .col-description .titleProduct h5{
+  margin: 0px;
+  font-size: 16px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.fondo .container .row .col-description .flex-start{
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.fondo .container .row .col-description .flex-start div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.fondo .container .row .col-description .flex-start div span{
+  margin-left: 20px;
+  font-weight: 500;
+}
+.fondo .container .row .col-description .desc{
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fondo .container .row .col-description .desc span{
+  float: left;
+  width: 50%;
+}
+.fondo .container .row .col-description .desc span:first-child{
+  color: #4e4e4e;
+}
+
+.fondo .container .row .col-description .desc span:nth-child(2){
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.fondo .container .row .col-description .box{
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #b5b4b4;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.fondo .container .row .col-description .box .quantity{
+  position: relative;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fondo .container .row .col-description .box .quantity .less{
+  position: absolute;
+  font-size: 12px;
+  width: 25px;
+  fill: #af3554;
+  left: 10px;
+}
+.fondo .container .row .col-description .box .quantity .more{
+  position: absolute;
+  font-size: 12px;
+  width: 25px;
+  fill: #af3554;
+  right: 32px;
+  margin-top: 0px;
+}
+.fondo .container .row .col-description .box .quantity .span{
+  transform: translateX(-10px);
+}
+.fondo .container .row .col-description .box .quantity .btnAbsolute{
+  position: absolute;
+  right: 10px;
+  transform: translateX(50%);
+  background: #af3554;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fondo .container .row .col-description .box .price{
+  font-weight: 700;
+  font-size: 20px;
+}
+.fondo .container .row .col-description .box .quantity .btnAbsolute .icon{
+  fill: #ffffff;
+}
+.fondo .container .row .col-description .box .color{
+  fill: #858585;
+}
+.fondo .container .row .col-product{
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.fondo .container .row .col-product .product{
+  background: #faf8f7;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 50px 20px 20px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.fondo .container .row .col-product .product::after{
+  content: "";
+  background: #faf8f7;
+  width: 20px;
+  height: 520px;
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  bottom: 0px;
+}
+.fondo .container .row .col-product .product .col-2{
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.fondo .container .row .col-product .product .col-2 .division{
+  float: left;
+  /* width: 100%; */
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.fondo .container .row .col-product .product .col-2 .division .option{
+  float: left;
+  width: 80px;
+  height: 80px;
+  transition: .3s all ease;
+  border: 5px solid transparent;
+  margin-bottom: 70px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+.fondo .container .row .col-product .product .col-2 .division .option:hover{
+  border: 5px solid #af3554;
+
+}
+.fondo .container .row .col-product .product .col-2 .division .option img{
+  float: left;
+ height: 120px;
+ transform: translateY(-25px) rotate(-45deg);
+}
+.fondo .container .row .col-product .product .absolute{
+  position: absolute;
+  left: 20%;
+  top: -50px;
+  height: 600px;
+  max-width: 180px;
+}
+.fondo .container .row .titleDesc{
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.fondo .container .row .titleDesc h3{
+  font-size: 24px;
+  color: #666666;
+}
+.fondo .container .row .raw{
+  float: left;
+  width: 100%;
+}
+.fondo .container .row .raw .description{
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fondo .container .row .raw .description div{
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.fondo .container .row .raw .description div span:first-child{
+  color: #a13359;
+  font-weight: 500;
+  font-size: 16px;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.fondo .container .row .raw .description div span:nth-child(2){
+  color: #999999;
+  font-weight: 500;
+  font-size: 16px;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+.fondo .container .row .raw .description2{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fondo .container .row .raw .description2 span{
+  float: left;
+  width: 100%;
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+/* FIN DETALLES DE PRODUCTO */

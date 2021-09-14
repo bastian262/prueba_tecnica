@@ -299,6 +299,36 @@
     width: 35%;
     float: left;
   }
+  .fondo .container .row .col-description
+  {
+    margin-top: 50px;
+    width: calc(40%);
+  }
+  .fondo .container .row .col-product{
+    width: calc(60% - 60px);
+    margin-left: 50px;
+  }
+  .fondo .container .row .col-product .product::after{
+    width: 150px;
+    right:-150px;
+  }
+  .fondo .container .row .topProducts .products .product{
+    float: left;
+    width: calc((100% / 4) - (60px / 4));
+    margin-right: 20px;
+  }
+  .fondo .container .row .topProducts .products .product:nth-child(2n) {
+    margin-right: 20px;
+  }
+  .fondo .container .row .topProducts .products .product:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .fondo .container .row .topProducts .products .product:nth-child(4n) {
+    margin-right: 0px;
+  }
+  .fondo .container .row .topProducts .products{
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1050px) {

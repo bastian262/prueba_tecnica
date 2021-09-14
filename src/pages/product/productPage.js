@@ -42,7 +42,6 @@ const ProductPage = () => {
             doc2.classList.remove("title2");
             doc2.classList.add("title3");
         }
-
     }
 
     // Metodo para abrir y cerrar los filtros en versión movil
@@ -134,7 +133,7 @@ const ProductPage = () => {
                                 return (
                                     <>
                                         <div class="product">    
-                                            <div class="card">
+                                            <div class="card" onClick={() => redirec(element)}>
                                                 <div class="square"></div>
                                                 <div class="square2"></div>
                                                 <div class="circle"></div>
@@ -157,7 +156,6 @@ const ProductPage = () => {
                                             <div className="buttonAdd" onClick={() => onAdd(element)}>
                                                 <ShoppingBasketOutlinedIcon className="icon"/>
                                             </div>
-                                            
                                         </div>
                                     </>
                                 );

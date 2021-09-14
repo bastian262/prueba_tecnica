@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { getBeers } from '../api/beers';
+import { getBeers, getBeers4 } from '../api/beers';
 import { useHistory } from 'react-router';
 
 export const useProduct = ( ) => {
@@ -21,12 +21,17 @@ export const useProduct = ( ) => {
         }
         setLoading(false);
     }
-
+    const getProducts4 = async () => {
+        setLoading(true);
+        const result = await getBeers4();
+        setProducts(result);
+        setLoading(false);
+    }
     const redirec = (product) => {
         localStorage.setItem("product", JSON.stringify(product));
         history.push(`/product/${product.id}`);
     }
 
-    return [products, getProducts, loading,redirec]
+    return [products, getProducts, loading,redirec,getProducts4]
 
 }
