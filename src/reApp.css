@@ -22,6 +22,10 @@
   .fondo .desktop {
     display: block;
   }
+   .desktop {
+    display: block;
+
+  }
   .fondo .movil {
     display: none !important;
   }
