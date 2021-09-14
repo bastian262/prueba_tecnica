@@ -25,6 +25,9 @@ body {
   max-width: 1150px;
   margin: 0 auto;
 }
+.desktop {
+  display: none;
+}
 .fondo .desktop {
   display: none;
 }
