@@ -4,6 +4,8 @@ import { useCart } from '../../hooks/useCart';
 import { useProduct } from '../../hooks/useProduct';
 import grape from '../../assets/img/uva.PNG'
 import pit from '../../assets/img/jarro.PNG'
+import equina from '../../assets/img/esquina1.PNG'
+import equina2 from '../../assets/img/esquina2.PNG'
 import Navbar from '../../components/nav/nav';
 import Footer from '../../components/footer/footer';
 import ControlPointIcon from '@material-ui/icons/ControlPoint';
@@ -100,8 +102,8 @@ const DetailProductPage = () => {
                             {/* <div class="col-2">
                                 <img src={product.image_url} alt="" />
                             </div> */}
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <img className="esq1" src={equina} alt="" />
+                            <img className="esq2" src={equina2} alt="" />
                             <div class="col-2">
                                 <div className="division">
                                     <div class="option"><img src={product.image_url} alt="" /></div>

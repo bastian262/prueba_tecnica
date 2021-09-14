@@ -4,12 +4,15 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MarkunreadIcon from '@material-ui/icons/Markunread';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import NearMeIcon from '@material-ui/icons/NearMe';
+import decoration from '../../assets/img/decoration2.png'
+
 const Footer = () => {
     return ( 
         <>
             <footer>
                 <div className="container background">
                     <div class="header">
+                        <img src={decoration} alt="decorationFooter" className="decorationFooter desktop" /> 
                         <div class="col img">
                             <img src={logo} alt="" />
                         </div>

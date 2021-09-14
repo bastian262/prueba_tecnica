@@ -2,6 +2,7 @@ import React from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import ShoppingBasketOutlinedIcon from '@material-ui/icons/ShoppingBasketOutlined';
 import logo from '../../assets/img/prueba.png';
+import decoration from '../../assets/img/decoration2.png'
 import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { Link } from 'react-router-dom';
@@ -82,6 +83,7 @@ const Navbar = () => {
                             <FacebookIcon className="iconSocial" />
                         </div>
                         <button className="movil">CTACB ANCTPNBIOTOM</button>
+                        <img src={decoration} alt="decoration" className="decoration desktop" />
                     </div>				
                 </div>
             </nav>

@@ -593,6 +593,7 @@ footer .button span {
   width: 100%;
   position: relative;
   height: 100%;
+  overflow: visible;
 }
 .fondo .container .filter .fondo img {
   position: absolute;
@@ -616,6 +617,11 @@ footer .button span {
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
+}
+.fondo .container .filter .fondo .price {
+  float: left;
+  width: 100%;
+  padding: 0px 8px;
 }
 .fondo .container .filter .fondo .title3 {
   position: relative;
@@ -645,14 +651,13 @@ footer .button span {
   width: 100%;
   transition: 0.3s all ease-in;
   height: auto;
-  overflow: hidden;
 }
 .fondo .container .filter .collapseClose {
   height: 0px;
   position: relative;
   width: 100%;
   transition: 0.3s all ease-in;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .fondo .container .filter .transition {
   transition: 0.3s all ease-in;
@@ -1136,15 +1141,14 @@ footer .button span {
 }
 /* FIN CARRITO  */
 
-
 /* INICIO DETALLES DE PRODUCTO */
 
-.fondo .container .row .col-description{
+.fondo .container .row .col-description {
   float: left;
   width: 100%;
   margin-top: 150px;
 }
-.fondo .container .row .col-description .flex{
+.fondo .container .row .col-description .flex {
   float: left;
   width: 100%;
   display: flex;
@@ -1152,49 +1156,49 @@ footer .button span {
   justify-content: flex-start;
   margin-bottom: 20px;
 }
-.fondo .container .row .col-description .flex strong{
+.fondo .container .row .col-description .flex strong {
   color: #4e4e4e;
   border-bottom: 1px solid #ffc6d1;
 }
-.fondo .container .row .col-description .flex div{
+.fondo .container .row .col-description .flex div {
   width: 5px;
   height: 5px;
   background: #d4d4d3;
   margin: 0px 10px;
   transform: rotate(45deg);
 }
-.fondo .container .row .col-description .titleProduct{
+.fondo .container .row .col-description .titleProduct {
   float: left;
   width: 100%;
 }
-.fondo .container .row .col-description .titleProduct h2{
+.fondo .container .row .col-description .titleProduct h2 {
   font-size: 22px;
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 8px;
 }
-.fondo .container .row .col-description .titleProduct h5{
+.fondo .container .row .col-description .titleProduct h5 {
   margin: 0px;
   font-size: 16px;
   color: #4e4e4e;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.fondo .container .row .col-description .flex-start{
+.fondo .container .row .col-description .flex-start {
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-.fondo .container .row .col-description .flex-start div{
+.fondo .container .row .col-description .flex-start div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.fondo .container .row .col-description .flex-start div span{
+.fondo .container .row .col-description .flex-start div span {
   margin-left: 20px;
   font-weight: 500;
 }
-.fondo .container .row .col-description .desc{
+.fondo .container .row .col-description .desc {
   float: left;
   width: 100%;
   margin-bottom: 15px;
@@ -1202,20 +1206,20 @@ footer .button span {
   align-items: center;
   justify-content: flex-start;
 }
-.fondo .container .row .col-description .desc span{
+.fondo .container .row .col-description .desc span {
   float: left;
   width: 50%;
 }
-.fondo .container .row .col-description .desc span:first-child{
+.fondo .container .row .col-description .desc span:first-child {
   color: #4e4e4e;
 }
 
-.fondo .container .row .col-description .desc span:nth-child(2){
+.fondo .container .row .col-description .desc span:nth-child(2) {
   text-align: left;
   margin-left: 10px;
   font-weight: 600;
 }
-.fondo .container .row .col-description .box{
+.fondo .container .row .col-description .box {
   float: left;
   width: 100%;
   display: flex;
@@ -1227,7 +1231,7 @@ footer .button span {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-.fondo .container .row .col-description .box .quantity{
+.fondo .container .row .col-description .box .quantity {
   position: relative;
   width: 150px;
   height: 40px;
@@ -1237,14 +1241,14 @@ footer .button span {
   align-items: center;
   justify-content: center;
 }
-.fondo .container .row .col-description .box .quantity .less{
+.fondo .container .row .col-description .box .quantity .less {
   position: absolute;
   font-size: 12px;
   width: 25px;
   fill: #af3554;
   left: 10px;
 }
-.fondo .container .row .col-description .box .quantity .more{
+.fondo .container .row .col-description .box .quantity .more {
   position: absolute;
   font-size: 12px;
   width: 25px;
@@ -1252,10 +1256,10 @@ footer .button span {
   right: 32px;
   margin-top: 0px;
 }
-.fondo .container .row .col-description .box .quantity .span{
+.fondo .container .row .col-description .box .quantity .span {
   transform: translateX(-10px);
 }
-.fondo .container .row .col-description .box .quantity .btnAbsolute{
+.fondo .container .row .col-description .box .quantity .btnAbsolute {
   position: absolute;
   right: 10px;
   transform: translateX(50%);
@@ -1267,23 +1271,23 @@ footer .button span {
   align-items: center;
   justify-content: center;
 }
-.fondo .container .row .col-description .box .price{
+.fondo .container .row .col-description .box .price {
   font-weight: 700;
   font-size: 20px;
 }
-.fondo .container .row .col-description .box .quantity .btnAbsolute .icon{
+.fondo .container .row .col-description .box .quantity .btnAbsolute .icon {
   fill: #ffffff;
 }
-.fondo .container .row .col-description .box .color{
+.fondo .container .row .col-description .box .color {
   fill: #858585;
 }
-.fondo .container .row .col-product{
+.fondo .container .row .col-product {
   float: left;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 80px;
 }
-.fondo .container .row .col-product .product{
+.fondo .container .row .col-product .product {
   background: #faf8f7;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1292,7 +1296,17 @@ footer .button span {
   float: left;
   width: 100%;
 }
-.fondo .container .row .col-product .product::after{
+.fondo .container .row .col-product .product .esq1 {
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+.fondo .container .row .col-product .product .esq2 {
+  right: -0px;
+  bottom: 10px;
+  position: absolute;
+}
+.fondo .container .row .col-product .product::after {
   content: "";
   background: #faf8f7;
   width: 20px;
@@ -1302,13 +1316,13 @@ footer .button span {
   top: 0px;
   bottom: 0px;
 }
-.fondo .container .row .col-product .product .col-2{
+.fondo .container .row .col-product .product .col-2 {
   float: left;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.fondo .container .row .col-product .product .col-2 .division{
+.fondo .container .row .col-product .product .col-2 .division {
   float: left;
   /* width: 100%; */
   display: flex;
@@ -1316,11 +1330,11 @@ footer .button span {
   justify-content: flex-end;
   flex-direction: column;
 }
-.fondo .container .row .col-product .product .col-2 .division .option{
+.fondo .container .row .col-product .product .col-2 .division .option {
   float: left;
   width: 80px;
   height: 80px;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   border: 5px solid transparent;
   margin-bottom: 70px;
   display: flex;
@@ -1328,47 +1342,46 @@ footer .button span {
   justify-content: center;
   transform: rotate(45deg);
 }
-.fondo .container .row .col-product .product .col-2 .division .option:hover{
-  border: 5px solid #af3554;
-
+.fondo .container .row .col-product .product .col-2 .division .option:hover {
+  border: 5px solid #eedfbd;
 }
-.fondo .container .row .col-product .product .col-2 .division .option img{
+.fondo .container .row .col-product .product .col-2 .division .option img {
   float: left;
- height: 120px;
- transform: translateY(-25px) rotate(-45deg);
+  height: 120px;
+  transform: translateY(-25px) rotate(-45deg);
 }
-.fondo .container .row .col-product .product .absolute{
+.fondo .container .row .col-product .product .absolute {
   position: absolute;
   left: 20%;
   top: -50px;
   height: 600px;
   max-width: 180px;
 }
-.fondo .container .row .titleDesc{
+.fondo .container .row .titleDesc {
   float: left;
   width: 100%;
   margin-bottom: 50px;
 }
-.fondo .container .row .titleDesc h3{
+.fondo .container .row .titleDesc h3 {
   font-size: 24px;
   color: #666666;
 }
-.fondo .container .row .raw{
+.fondo .container .row .raw {
   float: left;
   width: 100%;
 }
-.fondo .container .row .raw .description{
+.fondo .container .row .raw .description {
   float: left;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.fondo .container .row .raw .description div{
+.fondo .container .row .raw .description div {
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-.fondo .container .row .raw .description div span:first-child{
+.fondo .container .row .raw .description div span:first-child {
   color: #a13359;
   font-weight: 500;
   font-size: 16px;
@@ -1376,7 +1389,7 @@ footer .button span {
   width: 100%;
   margin-bottom: 30px;
 }
-.fondo .container .row .raw .description div span:nth-child(2){
+.fondo .container .row .raw .description div span:nth-child(2) {
   color: #999999;
   font-weight: 500;
   font-size: 16px;
@@ -1385,12 +1398,12 @@ footer .button span {
   margin-bottom: 10px;
   line-height: 22px;
 }
-.fondo .container .row .raw .description2{
+.fondo .container .row .raw .description2 {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
-.fondo .container .row .raw .description2 span{
+.fondo .container .row .raw .description2 span {
   float: left;
   width: 100%;
   color: #a9a9a9;

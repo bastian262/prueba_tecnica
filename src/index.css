@@ -1,3 +1,11 @@
 .red {
   color: #af3554;
 }
+.MuiSlider-root {
+  color: #af3554 !important;
+  padding: 0px 20px;
+}
+.MuiSlider-thumb {
+  border-radius: 0px !important;
+  transform: rotate(45deg);
+}

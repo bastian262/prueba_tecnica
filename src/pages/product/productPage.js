@@ -7,7 +7,12 @@ import decoration from '../../assets/img/esquina.PNG';
 import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
 import ShoppingBasketOutlinedIcon from '@material-ui/icons/ShoppingBasketOutlined';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Slider from '@material-ui/core/Slider';
 
+
+function valuetext(value) {
+    return `$${value}`;
+}
 const ProductPage = () => {
     
     var localS = JSON.parse(localStorage.getItem("cart"));
@@ -15,6 +20,7 @@ const ProductPage = () => {
     const [onAdd,,,] = useCart(cart);
     const [products, getProducts, loading,redirec] = useProduct();
     const [page, setPage] = useState(1);
+    const [value, setValue] = useState([0.1, 7]);
 
     // Metodo para obtener productos de la siguiente página
     useEffect(() => {
@@ -24,6 +30,11 @@ const ProductPage = () => {
     useEffect(() => {
         getProducts(page);
     }, []);
+    // METODO PARA CAMBIAR VALOR DEL SLIDER
+    const handleChange = (event, newValue) => {
+        console.log(newValue);
+        setValue(newValue);
+    };
     // Metodo para manejar collapse (Acordion)
     const openCloseCollapse = (num) => {
         let name = "collapse"+num;
@@ -93,7 +104,20 @@ const ProductPage = () => {
                             <span class="title2" id="title1" onClick={() => openCloseCollapse(1)}>WEHA</span>
                             <div class="collapseClose"  id="collapse1">
                                 <div class="price">
-
+                                    <Slider
+                                        value={value}
+                                        onChange={handleChange}
+                                        min={0.1}
+                                        max={7}
+                                        scale={(x) => x * 10000}
+                                        getAriaValueText={valuetext}
+                                    />
+                                    <div className="botonFiltro">
+                                        
+                                        <span>
+                                            precio : {( value[0] * 1000)} - {(value[1] * 1000 )}
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="divider"></div>
